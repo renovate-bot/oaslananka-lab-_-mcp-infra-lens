@@ -3,6 +3,11 @@
 Explain Linux incidents over SSH with baseline-aware MCP tooling.
 
 [![npm version](https://img.shields.io/npm/v/mcp-infra-lens.svg)](https://www.npmjs.com/package/mcp-infra-lens)
+[![CI](https://github.com/oaslananka-lab/mcp-infra-lens/actions/workflows/ci.yml/badge.svg)](https://github.com/oaslananka-lab/mcp-infra-lens/actions/workflows/ci.yml)
+[![Security](https://github.com/oaslananka-lab/mcp-infra-lens/actions/workflows/security.yml/badge.svg)](https://github.com/oaslananka-lab/mcp-infra-lens/actions/workflows/security.yml)
+[![CodeQL](https://github.com/oaslananka-lab/mcp-infra-lens/actions/workflows/codeql.yml/badge.svg)](https://github.com/oaslananka-lab/mcp-infra-lens/actions/workflows/codeql.yml)
+[![OpenSSF Scorecard](https://api.scorecard.dev/projects/github.com/oaslananka-lab/mcp-infra-lens/badge)](https://scorecard.dev/viewer/?uri=github.com/oaslananka-lab/mcp-infra-lens)
+[![Release](https://github.com/oaslananka-lab/mcp-infra-lens/actions/workflows/release.yml/badge.svg)](https://github.com/oaslananka-lab/mcp-infra-lens/actions/workflows/release.yml)
 [![npm downloads](https://img.shields.io/npm/dm/mcp-infra-lens.svg)](https://www.npmjs.com/package/mcp-infra-lens)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE)
 [![Node 20+](https://img.shields.io/badge/node-20%2B-339933.svg)](https://nodejs.org/)

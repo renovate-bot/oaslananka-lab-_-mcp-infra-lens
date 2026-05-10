@@ -9,7 +9,7 @@ Use this during healthy periods. Repeat several times to build a stable referenc
   "connection": {
     "host": "app-01.internal",
     "username": "ops",
-    "privateKey": "-----BEGIN OPENSSH PRIVATE KEY-----..."
+    "privateKey": "<contents loaded from a local SSH key file>"
   },
   "label": "weekday-normal"
 }
@@ -22,7 +22,7 @@ Use this during healthy periods. Repeat several times to build a stable referenc
   "connection": {
     "host": "app-01.internal",
     "username": "ops",
-    "privateKey": "-----BEGIN OPENSSH PRIVATE KEY-----..."
+    "privateKey": "<contents loaded from a local SSH key file>"
   },
   "duration_minutes": 5,
   "include_processes": true,

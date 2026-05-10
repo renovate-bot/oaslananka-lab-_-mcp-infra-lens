@@ -1,0 +1,23 @@
+ci:
+  - ".github/workflows/**"
+docs:
+  - "docs/**"
+  - "*.md"
+dependencies:
+  - "package.json"
+  - "package-lock.json"
+source:
+  - "src/**"
+tests:
+  - "test/**"
+security:
+  - "SECURITY.md"
+  - ".pre-commit-config.yaml"
+release:
+  - "release-please-config.json"
+  - ".release-please-manifest.json"
+  - "CHANGELOG.md"
+docker:
+  - "Dockerfile"
+  - "Dockerfile.test"
+  - "docker-compose*.yml"

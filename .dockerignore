@@ -1,0 +1,9 @@
+node_modules
+dist
+coverage
+.git
+.agent
+*.tgz
+*.log
+.env
+.mcp-infra-lens

@@ -3,13 +3,13 @@
   "version": "1.0.2",
   "mcpName": "io.github.oaslananka/mcp-infra-lens",
   "description": "MCP server that connects to Linux servers over SSH, collects live metrics, builds statistical baselines, detects anomalies with z-score analysis, and explains infrastructure health in plain English",
-  "homepage": "https://github.com/oaslananka/mcp-infra-lens",
+  "homepage": "https://github.com/oaslananka-lab/mcp-infra-lens",
   "repository": {
     "type": "git",
-    "url": "https://github.com/oaslananka/mcp-infra-lens.git"
+    "url": "https://github.com/oaslananka-lab/mcp-infra-lens.git"
   },
   "bugs": {
-    "url": "https://github.com/oaslananka/mcp-infra-lens/issues"
+    "url": "https://github.com/oaslananka-lab/mcp-infra-lens/issues"
   },
   "type": "module",
   "main": "dist/mcp.js",
@@ -33,6 +33,9 @@
     "CHANGELOG.md",
     "mcp.json",
     "server.json",
+    "SECURITY.md",
+    "CONTRIBUTING.md",
+    "CODE_OF_CONDUCT.md",
     "docs"
   ],
   "scripts": {
@@ -43,11 +46,13 @@
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
     "format:check": "prettier --check \"src/**/*.ts\" \"test/**/*.ts\"",
     "lint": "tsc --noEmit && eslint \"src/**/*.ts\" \"test/**/*.ts\" && prettier --check \"src/**/*.ts\" \"test/**/*.ts\"",
+    "typecheck": "tsc --noEmit",
     "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js --runInBand --testPathPattern=unit",
     "test:coverage": "node --experimental-vm-modules node_modules/jest/bin/jest.js --runInBand --coverage --testPathPattern=\"(unit|integration)\"",
     "test:integration": "node --experimental-vm-modules node_modules/jest/bin/jest.js --runInBand --testPathPattern=integration",
     "test:e2e": "node --experimental-vm-modules node_modules/jest/bin/jest.js --runInBand --testPathPattern=e2e",
     "test:ci": "npm run test:coverage",
+    "ci:check": "npm run format:check && npm run lint && npm run typecheck && npm test && npm run test:integration && npm run build && npm pack --dry-run && node scripts/validate-mcp-metadata.mjs",
     "prepare": "npm run build"
   },
   "engines": {
